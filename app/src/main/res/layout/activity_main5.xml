@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/barber6"
+        tools:context=".Main5Activity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+    <Button
+            android:text="Lembre-me"
+        android:textColor="#fff"
+        android:background="@drawable/botao_cust"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/agendar"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/instagram"
+            android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/confirma"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_check_circle" />
+
+
+            <ImageView
+                android:id="@+id/data"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/t"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/ic_data" />
+
+            <ImageView
+                    android:id="@+id/hora"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/data"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_relogio" />
+
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirma"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="Agendamento finalizado com sucesso!"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+
+            <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toEndOf="@+id/data"
+                    android:layout_toRightOf="@+id/data"
+
+                    android:text="TextView"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+            <TextView
+                    android:id="@+id/txthora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toEndOf="@+id/hora"
+                    android:layout_toRightOf="@+id/hora"
+
+                    android:text="TextView"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+            <Button
+                    android:id="@+id/faceb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txthora"
+                    android:layout_alignStart="@+id/sair"
+                    android:layout_alignLeft="@+id/sair"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/face"
+                    android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/instagram"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txthora"
+                android:layout_alignEnd="@+id/sair"
+                android:layout_alignRight="@+id/sair"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/instag"
+                android:textSize="10sp"
+                tools:ignore="UnknownId" />
+
+            <Button
+            android:id="@+id/endereco"
+                android:textColor="#fff"
+                android:background="@drawable/botao_cust"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@id/agendar"
+            android:layout_marginTop="20dp"
+                android:text="Localização"
+            android:drawableLeft="@drawable/ic_local"
+            android:textSize="10sp" />
+
+            <Button
+                    android:id="@+id/contato"
+                    android:background="@drawable/botao_cust"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/endereco"
+                    android:drawableLeft="@drawable/ic_telefone"
+                    android:text="Contato"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="10dp" />
+
+            <Button
+                    android:id="@+id/sair"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/contato"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/botaotab"
+                    android:text="SAIR" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".Admin_fotos">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Escolha a imagem e clique no botao referente ao local que deseja inseri-la."
+             />
+        <Button
+                android:id="@+id/btnChoose"
+                android:text="IMAGENS"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_marginTop="5dp"
+            android:background="@drawable/borda_img"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f"/>
+            <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnChoose"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="50dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtestilo"
+                android:hint="Estilo de corte de cabelo"
+                android:layout_below="@+id/imgView"/>
+
+    <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtestilo"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/borda_img"
+            android:text="capa1" />
+
+            <Button
+                android:id="@+id/btnCapa2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnUpload"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/borda_img"
+                android:text="capa2" />
+            <Button
+                android:id="@+id/prof1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnCapa2"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/borda_img"
+                android:text="profissional 1" />
+
+            <Button
+                android:id="@+id/prof2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prof1"
+                android:background="@drawable/borda_img"
+                android:layout_marginTop="5dp"
+                android:text="profissional 2" />
+    <TextView
+            android:id="@+id/galeria"
+            android:text="Galeria"
+            android:layout_below="@+id/prof2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30dp"/>
+
+
+        <Button
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/galeria"
+                android:layout_marginTop="0dp"
+            android:background="@drawable/borda_img"
+                android:layout_weight="1"
+                android:text="enviar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/myrecyclerimg"
+            android:layout_below="@+id/bt1"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

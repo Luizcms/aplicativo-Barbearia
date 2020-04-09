@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Painel_Admin">
+
+    <ScrollView
+        android:id="@+id/scrol"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/txtInicio"/>
+
+            <EditText
+                android:id="@+id/txtInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="150dp"
+                android:inputType="textMultiLine"
+                android:hint="Mensagem inicial" />
+            <EditText
+                android:id="@+id/txtservico1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/button"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Servico 1"/>
+            <EditText
+                android:id="@+id/preco1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/txtservico1"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Preco 1"/>
+            <Button
+                android:id="@+id/servico1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/preco1"/>
+            <EditText
+                android:id="@+id/txtservico2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/servico1"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Servico 2"/>
+            <EditText
+                android:id="@+id/preco2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/txtservico2"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Preco 2"/>
+            <Button
+                android:id="@+id/servico2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/preco2"/>
+
+            <EditText
+                android:id="@+id/txtservico3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/servico2"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Servico 3"/>
+            <EditText
+                android:id="@+id/preco3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/txtservico3"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Preco 3"/>
+            <Button
+                android:id="@+id/servico3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/preco3"/>
+            <EditText
+                android:id="@+id/txtservico4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/servico3"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Servico 4"/>
+            <EditText
+                android:id="@+id/preco4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/txtservico4"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Preco 4"/>
+            <Button
+                android:id="@+id/servico4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/preco4"/>
+            <EditText
+                android:id="@+id/txtservico5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/servico4"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Servico 5"/>
+            <EditText
+                android:id="@+id/preco5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/txtservico5"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Preco 5"/>
+            <Button
+                android:id="@+id/servico5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/preco5"/>
+            <EditText
+                android:id="@+id/prof1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/servico5"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Profissional 1"/>
+            <Button
+                android:id="@+id/btprof1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/prof1"/>
+            <EditText
+                android:id="@+id/prof2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/btprof1"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Profissional 2"/>
+            <Button
+                android:id="@+id/btprof2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/prof2"/>
+            <EditText
+                android:id="@+id/descricao1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/btprof2"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Texto/história/recado(ficara logo acima da galeria)"/>
+            <Button
+                android:id="@+id/btdesc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar texto 1"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/descricao1"/>
+            <EditText
+                android:id="@+id/descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/btdesc1"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Texto/história/recado(ficara logo abaixo da galeria)"/>
+            <Button
+                android:id="@+id/btdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar texto 2"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/descricao"/>
+            <EditText
+                android:id="@+id/ender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/btdesc"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="rua...,num,cidade"/>
+            <Button
+                android:id="@+id/btend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar(Endereço comercial)"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/ender"/>
+            <EditText
+                android:id="@+id/telef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/btend"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="+55 xx xxxx-xxxx"/>
+            <Button
+                android:id="@+id/bttelef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar(Contato whatsApp)"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/telef"/>
+            <EditText
+                android:id="@+id/face"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/bttelef"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="cole o link do face"/>
+            <Button
+                android:id="@+id/btface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar(Facebook)"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/face"/>
+            <EditText
+                android:id="@+id/inst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/btface"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="https://www.instagram.com/nome do perfil"/>
+            <Button
+                android:id="@+id/btinst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar(Instagram)"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/inst"/>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trocar imagens"
+        android:layout_marginTop="5dp" />
+    <Button
+        android:id="@+id/btn_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alterar servicos e valores"
+        android:layout_below="@+id/btimg"
+        />
+    <Button
+        android:id="@+id/reservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver reservas"
+        android:layout_below="@+id/btn_alterar"
+        />
+
+    <ListView
+        android:id="@+id/list_p"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/reservas">
+
+    </ListView>
+
+</RelativeLayout>

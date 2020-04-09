@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/segunda"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:alpha=".9"
+                android:gravity="left"
+                android:text="SEGUNDA" />
+
+        <TextView
+                android:id="@+id/terca"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:alpha=".9"
+                android:gravity="right"
+                android:text="TERCA" />
+
+        <TextView
+                android:id="@+id/quarta"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/ter"
+                android:layout_toRightOf="@+id/ter"
+                android:alpha=".9"
+                android:gravity="right"
+                android:text="QUARTA" />
+
+        <TextView
+                android:id="@+id/quinta"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/qua"
+                android:layout_toRightOf="@+id/qua"
+                android:alpha=".9"
+                android:gravity="right"
+                android:text="QUINTA" />
+
+        <TextView
+                android:id="@+id/sexta"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/qui"
+                android:layout_toRightOf="@+id/qui"
+                android:alpha=".9"
+                android:gravity="right"
+                android:text="SEXTA" />
+
+        <TextView
+                android:id="@+id/sabado"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/sex"
+                android:layout_toRightOf="@+id/sex"
+                android:alpha=".9"
+                android:gravity="right"
+                android:text="SABADO" />
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_below="@+id/d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+<TextView
+android:id="@+id/seg"
+        android:textSize="10dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="4dp"
+android:alpha=".9"
+android:gravity="right"
+android:text="SEGUNDA"
+android:layout_marginStart="4dp"
+android:layout_marginLeft="4dp"/>
+
+<TextView
+android:text="TERCA"
+        android:textSize="10dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:alpha=".9"
+android:layout_marginTop="4dp"
+android:gravity="left"
+android:id="@+id/ter"
+android:layout_toEndOf="@+id/terca"
+android:layout_toRightOf="@+id/terca"
+android:layout_marginStart="4dp"
+android:layout_marginLeft="4dp"/>
+
+<TextView
+android:text="QUARTA"
+        android:textSize="10dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:alpha=".9"
+android:layout_marginTop="4dp"
+android:gravity="left"
+android:id="@+id/qua"
+android:layout_toEndOf="@+id/quarta"
+android:layout_toRightOf="@+id/quarta"
+android:layout_marginStart="4dp"
+android:layout_marginLeft="4dp"/>
+
+<TextView
+android:text="QUINTA"
+        android:textSize="10dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:alpha=".9"
+android:layout_marginTop="4dp"
+android:gravity="left"
+android:id="@+id/qui"
+android:layout_toEndOf="@+id/quinta"
+android:layout_toRightOf="@+id/quinta"
+android:layout_marginStart="4dp"
+android:layout_marginLeft="4dp"/>
+
+<TextView
+android:text="SEXTA"
+        android:textSize="10dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:alpha=".9"
+android:layout_marginTop="4dp"
+android:gravity="left"
+android:id="@+id/sex"
+android:layout_toEndOf="@+id/sexta"
+android:layout_toRightOf="@+id/sexta"
+android:layout_marginStart="4dp"
+android:layout_marginLeft="4dp"/>
+
+<TextView
+android:text="SABADO"
+        android:textSize="10dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:alpha=".9"
+android:layout_marginTop="4dp"
+android:gravity="left"
+android:id="@+id/sab"
+android:layout_toEndOf="@+id/sabado"
+android:layout_toRightOf="@+id/sabado"
+android:layout_marginStart="4dp"
+android:layout_marginLeft="4dp"/>
+
+</LinearLayout>
+</RelativeLayout>
